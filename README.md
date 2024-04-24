@@ -60,7 +60,25 @@ With WSL and Linux ready, you can install the Solana tools.
    ```bash
    sh -c "$(curl -sSfL https://release.solana.com/v1.18.4/install)"
    ```
-   - This command will download and install the specified version of Solana CLI.
+   This command will download and install the specified version of Solana CLI.
+   
+3. **Update Your PATH**:
+   - If the installer prompts you to update your PATH, follow the instructions provided. Usually, it will suggest a command that you should run, something similar to:
+   ```bash
+   echo 'export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"' >> ~/.bashrc
+   ```
+   - After running the suggested command, apply the changes with:
+   ```bash
+   source ~/.bashrc
+   ```
+4. **Verify Solana Installation**:
+Confirm that Solana CLI has been installed correctly:
+   - Run:
+     ```bash
+     solana --version
+     ```
+     This should display the installed version of Solana CLI.
+
 
 ### 3. Configuration and Testing
 
