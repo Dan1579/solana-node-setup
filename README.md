@@ -90,21 +90,17 @@ Now that Solana CLI is installed, you can configure it to connect to a specific 
      solana config set --url https://api.devnet.solana.com
      ```
 
-#### Create a Wallet
-
 If you don't already have a wallet, you can create one using Solana CLI. This wallet will be used to receive and send SOL on the Devnet.
 
-1. **Generate a New Wallet**:
+2. **Generate a New Wallet**:
    - Run the following command to create a new wallet. Make sure to note down your seed phrase and keep it in a secure location:
      ```bash
      solana-keygen new
      ```
 
-#### Airdrop SOL to Your Wallet
-
 Since you're working on Devnet, you can request test SOL through an airdrop. This is useful for development and testing without needing to use real funds.
 
-1. **Request an Airdrop**:
+3. **Request an Airdrop**:
    - Use the `solana airdrop` command to request free test SOL. Replace `<AMOUNT>` with the number of SOL you wish to receive and `<YOUR_WALLET_ADDRESS>` with your wallet's public address:
      ```bash
      solana airdrop <AMOUNT> <YOUR_WALLET_ADDRESS>
@@ -114,20 +110,17 @@ Since you're working on Devnet, you can request test SOL through an airdrop. Thi
      solana airdrop 1 FAXHGQoiGyqoHMTLnf2eUn5meo47g56miQxfUajo6udU
      ```
 
-#### Verify Your Balance
-
 After receiving the airdrop, it's a good practice to check your wallet's balance to ensure the test SOL has been credited.
 
-1. **Check Wallet Balance**:
+4. **Check Wallet Balance**:
    - Verify the amount of SOL in your wallet by running:
      ```bash
      solana balance
      ```
-#### Test Network Connectivity with Solana Ping
-
+     
 After setting up your node and verifying your wallet's balance with the airdropped SOL, it is useful to test the network connectivity and response times of your node. This helps ensure that your setup is properly communicating with the Solana network.
 
-1. **Ping the Network**:
+5. **Ping the Network**:
    - Use the `solana ping` command to send 5 test transactions to the network. This command measures the round-trip time for each transaction:
      ```bash
      solana ping -c 5
