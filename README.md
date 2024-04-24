@@ -78,8 +78,62 @@ Confirm that Solana CLI has been installed correctly:
      ```
      This should display the installed version of Solana CLI.
 
+### 3. Test Accommodation for Airdrop Wallet
 
-### 3. Proceed with Configuration
+#### Configure Solana CLI
+
+Now that Solana CLI is installed, you can configure it to connect to a specific network. For development purposes, connecting to the Devnet is recommended as it allows you to work with test SOL without real-world value.
+
+1. **Configure to Devnet**:
+   - Ensure that your Solana CLI is configured to connect to the Devnet by running:
+     ```bash
+     solana config set --url https://api.devnet.solana.com
+     ```
+
+#### Create a Wallet
+
+If you don't already have a wallet, you can create one using Solana CLI. This wallet will be used to receive and send SOL on the Devnet.
+
+1. **Generate a New Wallet**:
+   - Run the following command to create a new wallet. Make sure to note down your seed phrase and keep it in a secure location:
+     ```bash
+     solana-keygen new
+     ```
+
+### 4. Airdrop SOL to Your Wallet
+
+Since you're working on Devnet, you can request test SOL through an airdrop. This is useful for development and testing without needing to use real funds.
+
+1. **Request an Airdrop**:
+   - Use the `solana airdrop` command to request free test SOL. Replace `<AMOUNT>` with the number of SOL you wish to receive and `<YOUR_WALLET_ADDRESS>` with your wallet's public address:
+     ```bash
+     solana airdrop <AMOUNT> <YOUR_WALLET_ADDRESS>
+     ```
+   - For example, to request 1 test SOL to your wallet:
+     ```bash
+     solana airdrop 1 FAXHGQoiGyqoHMTLnf2eUn5meo47g56miQxfUajo6udU
+     ```
+
+### 5. Verify Your Balance
+
+After receiving the airdrop, it's a good practice to check your wallet's balance to ensure the test SOL has been credited.
+
+1. **Check Wallet Balance**:
+   - Verify the amount of SOL in your wallet by running:
+     ```bash
+     solana balance
+     ```
+
+### Troubleshooting and Common Issues
+
+Include any common issues or errors that might occur during these steps and provide solutions or troubleshooting tips to help resolve them effectively.
+
+## Conclusion
+
+Following these steps will set up your Solana node for development on Windows using WSL, configure it to connect to the Devnet, and allow you to test transactions using airdropped SOL. This environment is ideal for developers looking to experiment with Solana blockchain features without financial risk.
+
+
+### 4. Proceed with Configuration
 
 Once Solana CLI is installed, the next steps involve configuring your node and setting up the environment for transaction monitoring and running scripts.
 
