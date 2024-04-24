@@ -60,6 +60,7 @@ With WSL and Linux ready, you can install the Solana tools.
    ```bash
    sh -c "$(curl -sSfL https://release.solana.com/v1.18.4/install)"
    ```
+   - This command will download and install the specified version of Solana CLI.
 
 ### 3. Configuration and Testing
 
