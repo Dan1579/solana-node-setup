@@ -56,7 +56,7 @@ With WSL and Linux ready, you can install the Solana tools.
    sudo apt update && sudo apt upgrade
    ```
 2. **Install Solana CLI Using the Provided Command**:
-   - Since the documentation provides a specific version, let's install that. You can use the command for installing the Solana release v1.18.4 (or replace it with any other version number if needed). Run this in your Linux terminal:
+   - Since the [documentation](https://docs.solanalabs.com/cli/install) provides a specific version, let's install that. You can use the command for installing the Solana release v1.18.4 (or replace it with any other version number if needed). Run this in your Linux terminal:
    ```bash
    sh -c "$(curl -sSfL https://release.solana.com/v1.18.4/install)"
    ```
