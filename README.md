@@ -78,7 +78,7 @@ Confirm that Solana CLI has been installed correctly:
      ```
      This should display the installed version of Solana CLI.
 
-### 3. Test Accommodation for Airdrop Wallet
+## Test Accommodation for Airdrop Wallet
 
 #### Configure Solana CLI
 
@@ -122,6 +122,37 @@ Now that Solana CLI is installed, you can configure it to connect to a specific 
      solana ping -c 5
      ```
    - This will output the time taken for each ping transaction, giving you an insight into the performance and stability of your connection to the Solana network.
+
+## Appendix: Advanced Solana CLI Interactions
+
+This section provides additional commands for those who want to further explore and test various functionalities of the Solana CLI. These steps are optional and can be used to expand your understanding and utilization of the Solana network.
+
+### A1. View Configuration Details
+This command shows your current configuration settings, including the network, wallet location, and fees.
+```bash
+solana config get
+```
+
+### A2. Create a New Token
+This involves creating a new SPL token, which is the Solana blockchain's equivalent of ERC-20 tokens on Ethereum.
+```bash
+spl-token create-token
+```
+
+### A3. Create a Token Account
+After creating a token, you'll need an account to hold it.
+```bash
+spl-token create-account <TOKEN_ADDRESS>
+```
+Replace `<TOKEN_ADDRESS>` with the address of the token you created.
+
+### A4. Mint Tokens
+Mint some amount of the token to a specific token account.
+```bash
+spl-token mint <TOKEN_ADDRESS> <AMOUNT> <RECIPIENT_ACCOUNT_ADDRESS>
+```
+
+Replace `<TOKEN_ADDRESS>`, `<AMOUNT>`, and `<RECIPIENT_ACCOUNT_ADDRESS>` with appropriate values.
 
 ### Troubleshooting and Common Issues
 
