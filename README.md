@@ -37,7 +37,7 @@ To run Solana on Windows, WSL must be installed to provide a Linux-based environ
    - Restart your computer to apply the changes.
     
 5. **Install a Linux Distribution from the Microsoft Store**:
-   - Go to the Microsoft Store and search for "Ubuntu" (or any other preferred Linux distribution).
+   - Go to the Microsoft Store and search for "Ubuntu" (Ubuntu 22.04.3 LTS) (or any other preferred Linux distribution).
    - Click "Get" and install it.
   
 6. **Set Up Your Linux Distribution:**:
@@ -47,15 +47,16 @@ To run Solana on Windows, WSL must be installed to provide a Linux-based environ
 
 ### 2. Set Up Solana Tools
 
-After installing WSL, install the Solana tools.
+With WSL and Linux ready, you can install the Solana tools.
 
 #### Steps:
-1. Open your Linux distribution via the start menu.
-2. Update your package lists:
+1. **Update your Linux packages**
+   - Open your Linux terminal (Ubuntu or chosen distro) and run:
    ```bash
-   sudo apt update
+   sudo apt update && sudo apt upgrade
    ```
-3. Install Solana's CLI tools:
+2. **Install Solana CLI Using the Provided Command**:
+   - Since the documentation provides a specific version, let's install that. You can use the command for installing the Solana release v1.18.4 (or replace it with any other version number if needed). Run this in your Linux terminal:
    ```bash
    sh -c "$(curl -sSfL https://release.solana.com/v1.18.4/install)"
    ```
