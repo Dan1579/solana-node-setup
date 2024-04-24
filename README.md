@@ -33,7 +33,17 @@ To run Solana on Windows, WSL must be installed to provide a Linux-based environ
      dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
      ```
 
-4. Restart your computer to complete the installation of both features.
+4. **Restart Your Computer**:
+   - Restart your computer to apply the changes.
+    
+5. **Install a Linux Distribution from the Microsoft Store**:
+   - Go to the Microsoft Store and search for "Ubuntu" (or any other preferred Linux distribution).
+   - Click "Get" and install it.
+  
+6. **Set Up Your Linux Distribution:**:
+   - Once installed, launch it from the Start menu.
+   - The first launch will take some time as it completes installation.
+   - Set your UNIX username and password when prompted.
 
 ### 2. Set Up Solana Tools
 
