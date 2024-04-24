@@ -100,7 +100,7 @@ If you don't already have a wallet, you can create one using Solana CLI. This wa
      solana-keygen new
      ```
 
-### 4. Airdrop SOL to Your Wallet
+#### Airdrop SOL to Your Wallet
 
 Since you're working on Devnet, you can request test SOL through an airdrop. This is useful for development and testing without needing to use real funds.
 
@@ -114,7 +114,7 @@ Since you're working on Devnet, you can request test SOL through an airdrop. Thi
      solana airdrop 1 FAXHGQoiGyqoHMTLnf2eUn5meo47g56miQxfUajo6udU
      ```
 
-### 5. Verify Your Balance
+#### Verify Your Balance
 
 After receiving the airdrop, it's a good practice to check your wallet's balance to ensure the test SOL has been credited.
 
@@ -123,7 +123,7 @@ After receiving the airdrop, it's a good practice to check your wallet's balance
      ```bash
      solana balance
      ```
-### 6. Test Network Connectivity with Solana Ping
+#### Test Network Connectivity with Solana Ping
 
 After setting up your node and verifying your wallet's balance with the airdropped SOL, it is useful to test the network connectivity and response times of your node. This helps ensure that your setup is properly communicating with the Solana network.
 
