@@ -78,6 +78,15 @@ Confirm that Solana CLI has been installed correctly:
      ```
      This should display the installed version of Solana CLI.
 
+## Optional Features
+
+For users interested in testing and experimenting with Solana CLI, please refer to the following guides:
+
+- [Test Accommodation for Airdrop Wallet](./test-accommodation-guide.md): Detailed instructions for setting up a wallet, receiving airdrops, and testing wallet functionality on the Solana Devnet.
+
+- [Appendix: Advanced Solana CLI Interactions](./advanced-cli-interactions.md): A comprehensive guide on advanced CLI commands for token creation, staking, and other network interactions.
+
+
 ## Test Accommodation for Airdrop Wallet
 
 #### Configure Solana CLI
