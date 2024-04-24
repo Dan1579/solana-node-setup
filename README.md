@@ -128,9 +128,9 @@ After receiving the airdrop, it's a good practice to check your wallet's balance
 After setting up your node and verifying your wallet's balance with the airdropped SOL, it is useful to test the network connectivity and response times of your node. This helps ensure that your setup is properly communicating with the Solana network.
 
 1. **Ping the Network**:
-   - Use the `solana ping` command to send 10 test transactions to the network. This command measures the round-trip time for each transaction:
+   - Use the `solana ping` command to send 5 test transactions to the network. This command measures the round-trip time for each transaction:
      ```bash
-     solana ping -c 10
+     solana ping -c 5
      ```
    - This will output the time taken for each ping transaction, giving you an insight into the performance and stability of your connection to the Solana network.
 
