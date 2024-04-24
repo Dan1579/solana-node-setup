@@ -78,7 +78,7 @@ Confirm that Solana CLI has been installed correctly:
      ```
      This should display the installed version of Solana CLI.
 
-## Optional Features
+### Optional Features
 
 For users interested in testing and experimenting with Solana CLI, please refer to the following guides:
 
