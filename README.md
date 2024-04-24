@@ -36,7 +36,7 @@ To run Solana on Windows, WSL must be installed to provide a Linux-based environ
    - Restart your computer to apply the changes.
     
 5. **Install a Linux Distribution from the Microsoft Store**:
-   - Go to the Microsoft Store and search for "Ubuntu" (Ubuntu 22.04.3 LTS) (or any other preferred Linux distribution).
+   - Go to the Microsoft Store and search for "Ubuntu" (Ex: Ubuntu 22.04.3 LTS) or any other preferred Linux distribution.
    - Click "Get" and install it.
   
 6. **Set Up Your Linux Distribution:**:
