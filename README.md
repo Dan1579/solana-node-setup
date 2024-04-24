@@ -82,9 +82,9 @@ Confirm that Solana CLI has been installed correctly:
 
 For users interested in testing and experimenting with Solana CLI, please refer to the following guides:
 
-- [Test Accommodation for Airdrop Wallet](./test-accommodation-guide.md): Detailed instructions for setting up a wallet, receiving airdrops, and testing wallet functionality on the Solana Devnet.
+- [Test Accommodation for Airdrop Wallet](./guides/test-accommodation-guide.md): Detailed instructions for setting up a wallet, receiving airdrops, and testing wallet functionality on the Solana Devnet.
 
-- [Appendix: Advanced Solana CLI Interactions](./advanced-cli-interactions.md): A comprehensive guide on advanced CLI commands for token creation, staking, and other network interactions.
+- [Appendix: Advanced Solana CLI Interactions](./guides/advanced-cli-interactions.md): A comprehensive guide on advanced CLI commands for token creation, staking, and other network interactions.
 
 ### 4. Proceed with Configuration
 
