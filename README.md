@@ -154,6 +154,19 @@ spl-token mint <TOKEN_ADDRESS> <AMOUNT> <RECIPIENT_ACCOUNT_ADDRESS>
 
 Replace `<TOKEN_ADDRESS>`, `<AMOUNT>`, and `<RECIPIENT_ACCOUNT_ADDRESS>` with appropriate values.
 
+### A5. Transfer Tokens
+Transfer tokens from one account to another.
+```bash
+spl-token transfer <TOKEN_ADDRESS> <AMOUNT> <RECIPIENT_ACCOUNT_ADDRESS> --fund-recipient
+```
+This command also funds the recipient account if it doesn't exist, ensuring the transfer can complete.
+
+### A6. View Token Balances
+Display the balances of all token accounts under your wallet.
+```bash
+spl-token accounts
+```
+
 ### Troubleshooting and Common Issues
 
 Include any common issues or errors that might occur during these steps and provide solutions or troubleshooting tips to help resolve them effectively.
