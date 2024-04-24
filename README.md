@@ -167,6 +167,13 @@ Display the balances of all token accounts under your wallet.
 spl-token accounts
 ```
 
+### A7. Check Transaction History
+To get the last transaction details, you can use:
+```bash
+solana transaction-history <WALLET_ADDRESS> --limit 1
+```
+Replace `<WALLET_ADDRESS>` with the actual wallet address you're interested in. The `--limit 1` option tells the CLI to fetch only the most recent transaction.
+
 ### Troubleshooting and Common Issues
 
 Include any common issues or errors that might occur during these steps and provide solutions or troubleshooting tips to help resolve them effectively.
