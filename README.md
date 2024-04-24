@@ -1,3 +1,4 @@
+
 # Solana Node Setup on Windows
 
 This repository documents the setup and configuration of a Solana node running under Windows 11 using WSL (Windows Subsystem for Linux).
@@ -15,10 +16,53 @@ Before starting, ensure your system meets the following prerequisites:
 
 To run Solana on Windows, WSL must be installed to provide a Linux-based environment.
 
-#### Steps:
-1. Open PowerShell as Administrator:
-   - Search for PowerShell in the Start menu, right-click on it, and select "Run as administrator".
+#### Steps to Enable WSL and Virtual Machine Platform:
 
-2. Enable the Windows Subsystem for Linux:
-   ```powershell
-   wsl --install
+1. **Open PowerShell as Administrator**:
+   - Search for PowerShell in your Start menu, right-click on it, and select "Run as administrator".
+
+2. **Enable the WSL Feature**:
+   - In the PowerShell window, type the following command and press Enter:
+     ```shell
+     dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+     ```
+
+3. **Enable Virtual Machine Platform**:
+   - Still in PowerShell, type the following command and press Enter:
+     ```shell
+     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+     ```
+
+4. Restart your computer to complete the installation of both features.
+
+### 2. Set Up Solana Tools
+
+After installing WSL, install the Solana tools.
+
+#### Steps:
+1. Open your Linux distribution via the start menu.
+2. Update your package lists:
+   ```bash
+   sudo apt update
+   ```
+3. Install Solana's CLI tools:
+   ```bash
+   sh -c "$(curl -sSfL https://release.solana.com/v1.18.4/install)"
+   ```
+
+### 3. Configuration and Testing
+
+Detail the configuration steps and how to start the Solana validator for testing.
+
+#### Example Command:
+```bash
+solana-test-validator
+```
+
+## Further Development
+
+Discuss how you plan to develop and test the calculation algorithms and transaction monitoring scripts using Node.js and `@solana/web3.js`.
+
+## Troubleshooting
+
+Include common issues and troubleshooting steps for setting up the Solana node.
