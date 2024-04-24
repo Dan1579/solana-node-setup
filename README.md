@@ -86,7 +86,7 @@ For users interested in testing and experimenting with Solana CLI, please refer 
 
 - [Appendix: Advanced Solana CLI Interactions](./guides/advanced-cli-interactions.md): A comprehensive guide on advanced CLI commands for token creation, staking, and other network interactions.
 
-### 4. Proceed with Configuration
+### 3. Proceed with Configuration
 
 Once Solana CLI is installed, the next steps involve configuring your node and setting up the environment for transaction monitoring and running scripts.
 
